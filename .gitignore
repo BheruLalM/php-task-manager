@@ -1,1 +1,4 @@
 .env
+.env.example
+migrate.php
+test_db.php
