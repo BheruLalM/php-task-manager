@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 15px;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+.form-box {
+    margin-bottom: 20px;
+}
+
+.form-box form {
+    display: flex;
+    gap: 8px;
+}
+
+.form-box input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-add {
+    padding: 8px 16px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-add:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 6px;
+    font-size: 0.9rem;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+th,
+td {
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #eee;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+}
+
+/* Status */
+.badge-pending {
+    color: orange;
+    font-weight: bold;
+}
+
+.badge-completed {
+    color: green;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn-complete {
+    padding: 5px 10px;
+    background: green;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-right: 4px;
+}
+
+.btn-delete {
+    padding: 5px 10px;
+    background: #dc3545;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+/* Summary rows (tfoot) */
+.summary-row td {
+    background: #f0f4ff;
+    border-top: 2px solid #ccc;
+}
+
+.summary-total td {
+    background: #e6ffe6;
+    border-top: 2px solid #aaa;
+}
