@@ -29,6 +29,8 @@ foreach ($tasks as $t) {
     if ($t['status'] === 'Pending') $totalPending++;
     else $totalCompleted++;
 }
+
+$appName = $_ENV['APP_NAME'] ?? 'Task Manager';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -36,13 +38,13 @@ foreach ($tasks as $t) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title><?php echo htmlspecialchars($appName); ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <h1>Task Manager</h1>
+    <h1><?php echo htmlspecialchars($appName); ?></h1>
 
     <!-- Add Task Form -->
     <div class="form-box">
